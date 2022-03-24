@@ -13,7 +13,9 @@ const fetchNewAdvice = async () => {
 const renderAdvice = (adviceObj) => {
     const { id, advice } = adviceObj;
     adviceNumber.textContent = `ADVICE #${id}`;
+    gsap.from('.number', { duration: 1.5, y: '-100%', ease: 'bounce'});
     adviceText.textContent = advice;
+    gsap.from('.quote', { duration: .5, y: '-100%', ease: 'bounce'});
 };
 
 const generateNewAdvice = async () => {
@@ -24,4 +26,7 @@ const generateNewAdvice = async () => {
 
 window.addEventListener('DOMContentLoaded', () => {
     adviceButton.addEventListener('click', generateNewAdvice)
+    gsap.from('.main', { duration: .5, x: '-100%', ease: 'power1'});
 })
+
+

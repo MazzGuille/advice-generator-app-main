@@ -34,7 +34,7 @@ body {
 }
 
 .wrapper {
-  height: 35vh;
+  height: max-content;
   padding: 2.5rem;
 }
 
@@ -78,7 +78,7 @@ picture {
   display: grid;
   place-content: center;
   position: absolute;
-  top: 90%;
+  bottom: -7%;
   background-color: var(--Neon-Green);
   border: none;
 }

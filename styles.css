@@ -99,3 +99,16 @@ picture {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+@media (min-width: 545px){
+   
+   .wrapper{
+       display: grid;
+       place-items: center;
+   }
+    .main{
+        max-width: 35vw;
+        padding: 2.5rem;
+    }
+}
